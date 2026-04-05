@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Page Title{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header>
+        <h1>{% block header %}Page Header{% endblock %}</h1>
+    </header>
+    <main>{% block content %}Content{% endblock %}</main>
+    <footer>Copyright ByMe &copy; 2026</footer>
+</body>
+
+</html>
